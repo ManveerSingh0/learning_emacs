@@ -1,0 +1,31 @@
+#+TITLE: Learning the Basic
+#+DESCRIPTION: Nothing can beat this editor
+#+AUTHOR: Manveer Singh
+
+
+* The Organization of the Screens
+1. Menu Bar
+2. Tool bar
+3. Mode Line
+4. Echo Area   
+
+
+** Point (CURSOR)
+1. If your cursor "food" is on "d" then your Point is between "o" and "d" ,
+   when you insert "!" then the output will be "foo!d";
+2. Each Buffer with same file has its own point value
+
+
+** The Echo Area
+1. C-x = (Display character at points{it's position})
+   
+
+** The Mode Line 
+1. This "-" represent  no special character set handling is used
+2. If on Remote server after ":" (column) in mode line @ will be shown
+3. With "size-indication-mode", you can display the size of the buffer
+   as well.
+4. In addition, if Emacs is inside a recursive editing level, square brackets (‘[…]’) appear around the parentheses. 
+
+** The Menu bar
+1. you can optionally access the menu-bar menus in the echo area. To this end, customize the variable tty-menu-open-use-tmm to a non-nil value. Then typing F10 will run the command tmm-menubar instead of dropping down the menu. (You can also type M-`.

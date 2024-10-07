@@ -1,0 +1,24 @@
+#+TITLE: Learning From System Crafters
+[[https://www.youtube.com/watch?v=RQK_DaaX34Q&list=PLEoMzSkcN8oPQtn7FQEF3D7sroZbXuPZ7][This is the link to tutorial playlist on youtube]]
+
+
+
+
+#+BEGIN_SRC emacs-lisp
+    (setq my-name "Manveer Singh")
+    (message "My name is %s" my-name)
+
+    (defun the-meaning-of-life(answer)
+      (message "The answer is %s" answer))
+
+  (the-meaning-of-life my-name)
+
+  (switch-to-buffer (other-buffer))
+#+END_SRC
+
+#+RESULTS:
+: The answer is Manveer Singh
+
+
+
+

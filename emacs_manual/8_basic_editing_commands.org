@@ -1,0 +1,57 @@
+#+TITLE: Basic Editing Commands
+
+
+* Inserting Text
+1. RET -> newline 
+2. C-q any DEL key or sequence like C-q 1 0 1 B insert 'AB'
+   To set HEXADECIMAL to OCTAL set the variable read-quoted-char-radix to 10 or 16
+3. C-x 8 [ or ] or { or } insert “ ” etc
+4. C-x 8 RET , you can insert any unicode inside Emacs like this ← etc
+5. C-x C-u \ then run iso-transl , now you can write any unicode character using
+   C-x \ { or } or [ or ] etc
+
+* Changing The Location Of Point
+1. M-g TAB , to move to column
+2. C-x C-n set goal-column , move vertially on same point
+   C-u C-x C-n , cancel goal column
+3. track-eol is set to non-nil value keeps point to end of line if start at end of line
+4. next-line-add-newlines to non-nil value , C-n will add line at the end of buffer
+    
+
+* Erasing Text
+1. delete-backward-char , delete-forward-char , delete-char(C-d)
+   kill-line (C-k) , delete-word(M-d) , M-BACKSPACE(backward-kill-word)
+   M-d (kill-word)
+
+* Undoing Changes
+1. C-/ , C-x u , C-_ --> these commands work same
+2  M-x undo-redo && undo-only 
+
+* Help
+1. C-h k , C-h a , C-h d , C-h f, C-h v
+
+* Blank Lines
+1. C-o insert a blank line after the cursor (open-line)
+2. C-x C-o (delete-blank-lines) this deletes all blank lines before or after
+
+* Cursor Position Information
+1. what-line , line-number-mode , column-number-mode , M-=
+   M-x count-words , _hl_line_mode_ --> this enables highlighting line cursor is
+   size-indication-mode --> to tell the size of file
+2. To disable character name in C-x = ,
+   use non-nil value here *what-cursor-show-names*
+
+
+* Numeric Arguments
+1. Instead of C-u number C-n or any command use
+   M-{number} C-n or any command , you can enter number like this
+   M-1 3 4 C-n both works
+   C-u 4 5 C-u 1, this insert 45 copies of 1
+2. To insert five zeroes or anything M-5 C-u 0
+3. C-u {insert four by default} so you can do
+   C-u C-u C-n or p  to move through files
+
+* Repeating A Command
+1. C-x z (repeat)
+2. repeat-mode to  C-x o o o instead of C-x o C-x o C-x o
+   describe-repeat-maps , to learn more about repeat mode

@@ -1,0 +1,8 @@
+#+TITLE: Entering Emacs
+
+
+1. If inhibit-startup-screen is non-nil
+   Emacs doesn't show startup screen.
+   Instead it shows *scratch* screen.
+2. Initial-buffer-choice to "/media/hardisk/programming" directory
+   this will show directory when start emacs

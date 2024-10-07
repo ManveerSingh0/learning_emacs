@@ -1,0 +1,35 @@
+#+TITLE: The Minibuffer
+
+
+* Using The Minibuffer
+1. By opening Minibuffer in new frame it stays with you if
+   minibuffer-follows-selected-frame to nil , it stays in previous frame
+   
+* Minibuffers For File Names
+1. // in minibufer C-x C-f ignore any argument give before
+   example --> /this/place/ignored//~/Documents/this is where it start now;
+   you can disable it by using M-x file-name-shadow-mode  
+2. ON server side emacs require double /// , this will work same as // in local hosted emacs
+   // slash in emacs works as , ignore only the file-name part leave the rest same
+3. insert-default-directory to nil , so that C-x C-f start empty not from the directory you are in
+   
+* Editing In The Minibuffer
+1. C-q C-j to newline in minibuffer(echo area)
+   C-o works same
+2. ? Display a list of completion (minibuffer-copletion-help)
+3. To change M-DOWN , M-UP , use this documentation
+   [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Completion-Commands.html][M-Down , M-Up link to move through buffer suggestions ]]
+4. To get auto-complete like Emacs (windows) example appdata to AppData
+   read-file-name-completion-ignore-case (default value nil in linux)
+
+* Minibuffer History
+1. M-p and M-n , move to previous history in buffer and next history in buffer
+2. Set previous-matching-history-elment to any key so it will find maching word
+   mini-buffer command , next-machint-history-element
+   M-r and M-s for both commands
+
+* Repeat Minibuffer Commands
+1. C-x ESC ESC , re-execute minibuffer command
+2. M-x list-command-history , display entire command history
+
+    

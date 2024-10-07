@@ -1,0 +1,7 @@
+#+TITLE: KEYS
+
+
+* Keys
+1. Complete Command --> C-f , C-x , C-x 4 C-f, etc
+2. Prefix Key --> C-x 4 , C-x, etc
+3. By default, the prefix keys in Emacs are C-c, C-h, C-x, C-x RET, C-x @, C-x a, C-x n, C-x r, C-x t, C-x v, C-x 4, C-x 5, C-x 6, ESC, and M-g.

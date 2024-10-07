@@ -1,0 +1,8 @@
+#+TITLE: Lisp Data Types
+
+M-x report-emacs-bug
+M-x submit-emacs-patch
+
+
+* Lisp Data Types
+

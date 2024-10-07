@@ -1,0 +1,12 @@
+#+TITLE: Running Commands By Name
+
+
+* Running Commands By name
+1. M-S-x This only runs the commands which are usefull by your major
+   mode(lsp) or minor mode (anythingelse) are using or used only by
+   them
+2. You can turn off the suggest by (suggest-key-binding nil)
+3. extended-command-suggest-shorter to non-nil , you can type half of the command that don't have keybindings
+   can't be invoked , by just typing of the command.
+   suggest-key-bindings also as name say;
+

@@ -1,0 +1,10 @@
+#+TITLE: HELP
+
+* Help
+1. help-for-help C-h C-h , show all available help commands
+   help-window-select control open up in seperate window or decide
+2. C-h i d m emacs RET i topic RET || C-h i d m emacs RET s topic  RET
+   this searches for tpics in the indices of the emacs info manual
+   displaying the first match found
+3. M-x list-packages
+4. 

@@ -1,0 +1,25 @@
+#+TITLE: The Mark And The Region
+
+
+* Setting The Mark
+1. C-Spc , C-@ (C-Spc Works Better);
+2. C-x C-x (exchange-point-and-mark) (to go start and end of mark);
+3. C-x C-u (upcase-region) , C-x C-l (downcase-region);
+4. C-SPC (to set mark) C-u C-SPC ( to back to that mark);
+5. Shift Selection --> S-C-f , S-C-n
+
+
+* Commands To Mark Textual Objects
+1. M-@ --> sets mark for wards not character which c-spc do
+   (mark-word) sets mark at the end of current word and start it from there
+2. C-M-@ (mark-sexp) set mark after end of followling balanced expression
+3. M-h (mark-paragraph) in my case mark complete line
+   works as C-S-v in neovim 
+4. C-M-h (mark-defun)
+5. (mark-whole-buffer) C-x h
+   (mark-page) C-x C-p , from the beginning
+6. (setq use-empty-active-region t); to use M-$ type of commands which only work on mark
+   to make it work on non-mark region.
+
+* Operating on the Region
+1. 

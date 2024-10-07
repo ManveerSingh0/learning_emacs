@@ -1,0 +1,6 @@
+#+TITLE: Kinds Of User Input
+
+
+* Kind of Users Input
+1. ESC x and M-x works same (_ESC key en entered as seperate character_)
+2. Window Manger might block  M-TAB so customize it according to it; 

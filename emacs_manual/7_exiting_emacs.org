@@ -1,0 +1,16 @@
+#+TITLE: Exiting Emacs
+
+1. C-x C-c --> save-buffers-kill-terminal
+   This ask if you really want to quit
+   
+#+BEGIN_SRC lisp
+  (setq confirm-kill-emacs t) ;;this function will ask before quiting even if you saved. 
+#+END_SRC
+_Other Value You Can Use yes-or-no-p_
+
+2. _confirm-kill-process_ does not ask before killing subprocess
+   This check if there is subprocess is running if yes then ask for if
+   you want to quit or not;
+
+   
+3. M-x kill-emacs , don't ask for anything
