@@ -11,14 +11,34 @@
     (defun the-meaning-of-life(answer)
       (message "The answer is %s" answer))
 
-  (the-meaning-of-life my-name)
+  ;; (the-meaning-of-life my-name)
+  ;; (type-of nil)
 
-  (switch-to-buffer (other-buffer))
+  (eq 1.1 1.1)
+  ;; (switch-to-buffer (other-buffer))
 #+END_SRC
 
 #+RESULTS:
-: The answer is Manveer Singh
 
 
+* Equality Operators
+- eq --> Are the two parameters the same object ? (if you want to know if they reference to same object)
+#+BEGIN_SRC emacs-lisp
+  (eq 1 1) ;;this will return true
+  (eq 1.1 1.1) ;;this will return nothing or nil because floating point are handled differently in emacs lisp
+  (eq "Hello" "Hello") ;;this will too return nil because of different references handled by emacs lisp 
+#+END_SRC
 
-
+- eql --> Are the two parameters same object or same number ? (not for values but for numbers and objects this will work
+#+BEGIN_SRC emacs-lisp
+  (eql 1 1) ;;this will return true
+  (eql 1.1 1.1) ;;this will return true
+  (eql "Hello" "Hello") ;;this will return nil
+#+END_SRC
+- equal --> Are those two parameters equivalent
+#+BEGIN_SRC emacs-lisp
+  (equal 1 1) ;;this will return true
+  (equal 1.1 1.1) ;;this will return true
+  (equal "Hello" "Hello") ;;this will return true
+#+END_SRC   
+  
